@@ -31,10 +31,10 @@ on:
     branches: [ "master" ]
 
 env:
-  AWS_REGION: MY_AWS_REGION: us-east-1                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: MY_ECR_REPOSITORY: nodeapp-repo          # set this to your Amazon ECR repository name
+  AWS_REGION:  us-east-1                  # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: nodeapp-repo          # set this to your Amazon ECR repository name
   ECS_SERVICE: mytask-service-66kzrv83             # set this to your Amazon ECS service name
-  ECS_CLUSTER: MY_ECS_CLUSTER: mynodecluster                 # set this to your Amazon ECS cluster name
+  ECS_CLUSTER: mynodecluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: mytask # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
